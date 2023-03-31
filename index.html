@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Konwenter jednostek</title>
+</head>
+
+<body>
+    <div class="okno_gl">
+        <h1>Konwenter jednostek długości</h1>
+        <select id="inputtype">
+            <option value="">Z czego przeliczamy</option>
+            <option value="km">Kilometry</option>
+            <option value="m">Metry</option>
+            <option value="cm">Centymetry</option>
+            <option value="mm">Milimetry</option>
+        </select>
+        <input type="text" placeholder="Wpisz wartość" id="input" />
+        <select id="resulttype">
+            <option value="">Na co przeliczamy</option>
+            <option value="km">Kilometry</option>
+            <option value="m">Metry</option>
+            <option value="cm">Centymetry</option>
+            <option value="mm">Milimetry</option>
+        </select>
+        <button onclick="oblicz()">Przelicz</button>
+        <div id="wynik"></div>        
+        <script src="java.js"></script>
+    </div>
+
+</body>
+
+</html>
