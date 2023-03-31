@@ -6,7 +6,9 @@ const jednostka2= document.getElementById("resulttype")
 // console.log(jednostka1.options)
 
 
-
+liczba.addEventListener("keyup",oblicz)
+jednostka1.addEventListener("change",oblicz)
+jednostka2.addEventListener("change",oblicz)
 
 function oblicz(){
     let value = jednostka1.value;
@@ -22,10 +24,13 @@ function oblicz(){
     if (opcja1 === "km") {
         switch(opcja2) {
             case "m":
-                document.getElementById("wynik").innerHTML=Math.round(liczba.value*1000)
+                document.getElementById("wynik").innerHTML=(liczba.value*1000)
                break;
                case "cm":
                 document.getElementById("wynik").innerHTML=(liczba.value*100000)
+               break;
+               case "km":
+                document.getElementById("wynik").innerHTML=(liczba.value*1)
                break;
                case "mm":
                 document.getElementById("wynik").innerHTML=(liczba.value*1000000)
@@ -44,6 +49,9 @@ function oblicz(){
                case "mm":
                 document.getElementById("wynik").innerHTML=(liczba.value*1000)
                break; 
+               case "m":
+                document.getElementById("wynik").innerHTML=(liczba.value*1)
+               break;
         }
     }
     if (opcja1 === "cm") {
@@ -56,6 +64,9 @@ function oblicz(){
                break;
                case "mm":
                 document.getElementById("wynik").innerHTML=(liczba.value*10)
+               break;
+               case "cm":
+                document.getElementById("wynik").innerHTML=(liczba.value*1)
                break; 
         }
 
@@ -70,6 +81,9 @@ function oblicz(){
                break;
                case "cm":
                 document.getElementById("wynik").innerHTML=(liczba.value/10)
+               break;
+               case "mm":
+                document.getElementById("wynik").innerHTML=(liczba.value*1)
                break; 
         }
 

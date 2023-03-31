@@ -1,6 +1,13 @@
 body{
     background-color: gray;
+    display: flex;
+    justify-content: center;
 
+}
+
+h1{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 40px;
 }
 
 .okno_gl{
@@ -11,6 +18,8 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
+    border: solid red;
+    margin-top: 10%;
 
 }
 
@@ -21,9 +30,11 @@ body{
     border-radius: 10px;
     border-style: solid;
     font-size: 15px;
-    font-display: center;
-    font-weight:bold
-
+    text-align: center;
+    font-weight:bold;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 20px;
+    border: solid red;
 }
 select{
     height: 40px;
@@ -31,14 +42,25 @@ select{
     margin-left: 28%;
     margin-block: 20px;
     text-align: center;
+    font-weight: bold;
+    border: solid red;
 
 }
 
 input{
-    height: 30px;
-    width: 220px;
-    margin-left: 22%;
+    height: 50px;
+    margin-block: 30PX;
+    margin-inline: 10PX;
+    border-radius: 10px;
+    border-style: solid black;
+    font-size: 15px;
+    font-display: center;
+    font-weight:bold;
     text-align: center;
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    border: solid red;
 }
 
 button{
